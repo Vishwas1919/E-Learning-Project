@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .card{
+            margin: 10px;
+            width: 10%;
+            height: 20%;
+            display: inline-block;
+            background: #F8F8F8; 
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+        }
+        .title{
+            font-family: sans-serif;
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <span class="main"></span>
+
+    <script>
+const data=[
+    {
+        image:"/ASSETS/image1.jpeg",
+        title:'First card',       
+        name:'vishwas singh',
+        rating:4.8
+    },
+    {
+        image:"/ASSETS/image2.jpeg",
+        title:'Second card',       
+        name:'Vikas singh',
+        rating:8.8
+    }
+]
+
+data.forEach((element,i) => {
+    const main=document.querySelector(".main");
+        console.log(main);
+        const card=document.createElement('span');
+        card.classList='card';
+        const Educard=`
+        
+        <img src="${data[i].image}" alt="" width="150px" height="140px">
+        <span class="info">
+            <h4 class="title">${data[i].title}</h4>
+            <span>${data[i].rating}</span>
+            </span>
+        
+        `
+
+        card.innerHTML+=Educard;
+        main.appendChild(card);
+
+});
+
+
+        
+
+
+    </script>
+</body>
+</html>
