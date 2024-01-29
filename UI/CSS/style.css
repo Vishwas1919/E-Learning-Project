@@ -192,13 +192,18 @@ body{
     left: 10%;
 }
 .popular{
-    position: fixed;
     position: absolute;
     top: 104%;
     width: 100%;
     height: 100%;
 }
-.popular h2{
+.popular2{
+    position: absolute;
+    top: 210%;
+    width: 100%;
+    height: 100%;
+}
+.popular h2,.popular2 h2{
     position: absolute;
     top: 20px;
     left: 50px;
@@ -211,13 +216,33 @@ body{
     line-height: normal;
     text-transform: capitalize;
 }
+.fcourses{
+    position: absolute;
+    left:54%;
+    top: 15%;
+    font-family: sans-serif;
+    color: #2C7575;
+}
 .pcourses{
     position: absolute;
     left:58%;
     top: 15%;
     font-family: sans-serif;
+    color: #2C7575;  
+    }  
+.pcertificate{
+    position: absolute;
+    left:65%;
+    top: 15%;
+    font-family: sans-serif;
     color: #2C7575;
-   
+    }
+    .paidcertificate{
+    position: absolute;
+    left:78%;
+    top: 15%;
+    font-family: sans-serif;
+    color: #2C7575;
     }
 .freecourses{
     position: absolute;
@@ -251,7 +276,7 @@ body{
     font-size: 13px;
     color: #007E7E;
 }
-.main{
+.main,.main2{
     
    width: 100%;
    height: 79%;
@@ -259,7 +284,7 @@ body{
    top:25%;
    background: #F8F5F5; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25)
 }
-.card{
+.card ,.card2{
     width:18%; 
     height: 80%;
     position: relative;
