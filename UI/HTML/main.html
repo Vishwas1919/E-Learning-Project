@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/CSS/style.css">
-=======
-    <link rel="stylesheet" href="/UI/CSS/style.css">
->>>>>>> 230ee4623f1779f21adcc4a750925b88e808082d
-    <link rel="icon" type="image/x-icon" href="/UI/ASSETS/e-learning.png"> 
+    <link rel="stylesheet" href="/CSS/style.css">    
+    <link rel="icon" type="image/x-icon" href="/ASSETS/e-learning.png"> 
     <title>E-Learning</title>
     <script src="https://kit.fontawesome.com/355ebafc99.js" crossorigin="anonymous"></script>
-    <script src="/UI/JS/App.js"></script>
+    <!-- <script src="/JS/App.js"></script>
+    <script src="/JS/data.js"></script> -->
+    <!-- <script src="./test1.js"></script> -->
 </head>
 <body>
     <div class="blok1">
@@ -19,7 +17,7 @@
         <div class="menu">
             <ul>
                 <a href="#"><li>Home</li></a>
-                <a href="/UI/HTML/About.html"><li>About</li></a>
+                <a href="/HTML/About.html"><li>About</li></a>
                 <a href=""><li>course</li></a><i class="fa-sharp fa-solid fa-angle-down"></i>
                 <a href=""><li>Tutors</li></a>
                 <a href=""><li>Contact</li></a>
@@ -48,20 +46,20 @@
     </div>
     <div class="picsec">
         <div class="girl">
-            <img src="/UI/ASSETS/pic1.png" alt="">
+            <img src="/ASSETS/pic1.png" alt="">
         </div>
         <div class="leftone">
-            <img src="/UI/ASSETS/Rectangle 13.png" alt="">
+            <img src="/ASSETS/Rectangle 13.png" alt="">
         </div>
         <div class="rightone">
-            <img src="/UI/ASSETS/Rectangle 12.png" alt="">
+            <img src="/ASSETS/Rectangle 12.png" alt="">
         </div>
     </div>
     <div class="multicourse">
-        <span><a href=""><img src="/UI/ASSETS/udemy.png" alt=""></a></span>
-        <span><a href=""><img src="/UI/ASSETS/khan.png"  alt=""></a></span>
-        <span><a href=""><img src="/UI/ASSETS/cloud.png" alt=""></a></span>
-        <span><a href=""><img src="/UI/ASSETS/coursera.png" alt=""></a></span>
+        <span><a href=""><img src="/ASSETS/udemy.png" alt=""></a></span>
+        <span><a href=""><img src="/ASSETS/khan.png"  alt=""></a></span>
+        <span><a href=""><img src="/ASSETS/cloud.png" alt=""></a></span>
+        <span><a href=""><img src="/ASSETS/coursera.png" alt=""></a></span>
     </div>
     <div class="popular">
         <h2>Popular courses</h2>
@@ -79,16 +77,73 @@
             <span>Low To High</span><i class="fa-sharp fa-solid fa-angle-down"></i>
         </span>
 <!------------------------cource card------------------------->
-        <div class="cartconatiner">
+        <div class="main">
             
         </div>
 
 
     </div>
 
- 
-    <script src="JS/data.js"></script>
+    <script>
+      console.log("Hii");
+const data=[
+    {
+        redtitle:'Popular',
+        image:"/ASSETS/image1.jpeg",
+        type:'Unconscious Bias',
+        duration:'Duration : 25Mins',
+        fee:'$15.90',
+        feetype:'*Free',
+        institute:'/ASSETS/cloud.png',
+        rating:'<i class="fa-sharp fa-solid fa-star"></i>(43,435)'
+
+    },
+    {
+        redtitle:'Best Seller',
+        image:"/ASSETS/image2.jpeg",
+        type:'Communication ',
+        duration:'Duration : 50Mins',
+        fee:'$15.90',
+        feetype:'*Free',
+        institute:'/ASSETS/khan.png',
+        rating:'<i class="fa-sharp fa-solid fa-star"></i>(30,435)'
+
+    },
+    {
+        redtitle:'Best Seller',
+        image:"/ASSETS/image3.jpeg",
+        type:'Communication ',
+        duration:'Duration : 1hour 12Mins',
+        fee:'$10.90',
+        feetype:'*Free',
+        institute:'/ASSETS/khan.png',
+        rating:'<i class="fa-sharp fa-solid fa-star"></i>(28,435)'
+
+    }
+]
+
+data.forEach((element,i) => {
+
+    const main=document.querySelector(".main");
+
+    const card=document.createElement("span");
+    card.classList='card';
+    const Educard=`
+    <p>${data[i].redtitle}</p>
+    <h4>${data[i].type}</h4>
+
     
+    
+    
+    `
+    card.innerHTML+=Educard;
+    main.appendChild(card);
+    
+});
+
+      
+    </script>
+   
 
 
 

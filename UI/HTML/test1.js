@@ -1,26 +1,4 @@
-//import data from "./data.js"
-
-data.array.forEach((element,i) => {
-
-    const main=document.querySelector(".cartconatiner");
-
-    const card=document.createElement("span");
-    card.classList='card';
-    const Educard=`
-    <p>${data[i].redtitle}</p>
-
-    
-    
-    
-    `
-    card.innerHTML+=Educard;
-    main.appendChild(card);
-    
-});
-
-alert("hi")
-console.log("helo")
-
+console.log("Hii");
 const data=[
     {
         redtitle:'Popular',
@@ -56,3 +34,41 @@ const data=[
 
     }
 ]
+data.forEach((element,i) => {
+    const main=document.querySelector(".main");
+        console.log(main);
+        const card=document.createElement("span");
+        card.classList='card';
+        const Educard=`
+        
+        <img src="${data[i].image}" alt="" width="150px" height="140px">
+        <span class="info">
+            <h4 class="title">${data[i].redtitletitle}</h4>
+            <span>${data[i].type}</span>
+            
+        
+        `
+
+        card.innerHTML+=Educard;
+        main.appendChild(card);
+
+});
+// data.forEach((element,i) => {
+
+//     const main=document.querySelector(".main");
+
+//     const card=document.createElement("span");
+//     card.classList='card';
+//     const Educard=`
+//     <p>${data[i].redtitle}</p>
+//     <h4>${data[i].type}</h4>
+
+    
+    
+    
+//     `
+//     card.innerHTML+=Educard;
+//    // main.appendChild(card);
+//    main.appendChild(card)
+    
+

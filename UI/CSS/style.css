@@ -179,9 +179,10 @@ body{
 .multicourse{
     width: 100%;
     height: 60px;
+    position: fixed;
     background-color: #ececec;
     position:absolute;
-    top: 100%;
+    top: 97%;
     left: 0%;
 }
 .multicourse span a{
@@ -191,8 +192,9 @@ body{
     left: 10%;
 }
 .popular{
+    position: fixed;
     position: absolute;
-    top: 108%;
+    top: 104%;
     width: 100%;
     height: 100%;
 }
@@ -243,14 +245,14 @@ body{
     font-size: 13px;
     color: #007E7E;
 }
-.cartconatiner{
+.main{
    width: 100%;
    height: 70%;
    position: absolute;
    top:25%;
    background: #F8F5F5; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25)
 }
-.cart1{
+.card{
     width: 20%; 
     height: 80%;
     position: absolute;
