@@ -205,6 +205,11 @@ body{
     font-family: sans-serif;
     font-size: 25px;
     color: #17ACAC;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 .pcourses{
     position: absolute;
@@ -212,7 +217,8 @@ body{
     top: 15%;
     font-family: sans-serif;
     color: #2C7575;
-}
+   
+    }
 .freecourses{
     position: absolute;
     left:70%;
@@ -246,18 +252,70 @@ body{
     color: #007E7E;
 }
 .main{
+    
    width: 100%;
-   height: 70%;
+   height: 79%;
    position: absolute;
    top:25%;
    background: #F8F5F5; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25)
 }
 .card{
-    width: 20%; 
+    width:18%; 
     height: 80%;
-    position: absolute;
-    top: 10%;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    top: 3%;
     left:10%;
-     background: #F8F8F8; 
-     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    background: #F8F8F8; 
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.para{
+    width:100%;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    top: -18px;
+    font-size:14px;
+    color: #fff;
+    position: relative;
+    flex-shrink: 0;
+    background: #c00;
+    margin: 0;
+    padding: 0;
+}
+.main img{
+    position: relative;   
+    width:100%;
+    top: -18px;
+    height:50%;
+}
+.institute img{
+   margin: 20px;
+    width:30%;
+    height: 14%;
+}
+.main span, h3 ,h4{
+    font-family: sans-serif;
+    margin: 10px;
+    color: #0E8585;
+}
+.dynamic-button{
+    width: 50%;
+    height: 40px;
+    left: 23%;
+    top: 88%;
+    background-color: #007E7E;
+    color: #ececec;
+    font-size: 18px;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+}
+.rating{
+    position: relative;
+    top:-40px;
 }
