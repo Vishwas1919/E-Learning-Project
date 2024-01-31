@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
     
-        .card{
+        .card,.card2{
             margin: 10px;
             width: 10%;
             height: 20%;
@@ -18,10 +18,21 @@
             font-family: sans-serif;
             color: burlywood;
         }
+        .card2{
+            margin: 10px;
+            width: 10%;
+            height: 20%;
+            display: inline-block;
+            background: #f49999; 
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+        }
+        
     </style>
 </head>
 <body>
-    <span class="main"></span>
+    <div class="main"></div>
+    <h2>56</h2>
+    <div class="main2"></div>
 
     <script>
 const data=[
@@ -32,17 +43,27 @@ const data=[
         rating:4.8
     },
     {
-        image:"/ASSETS/image2.jpeg",
+        image:"/ASSETS/image3.jpeg",
         title:'Second card',       
-        name:'Vikas singh',
-        rating:8.8
-    },
-    {
-        image:"/ASSETS/image2.jpeg",
-        title:'Second card',       
-        name:'Vikas singh',
+        name:'Rajat singh',
         rating:8.8
     }
+    
+   
+]
+var data2=[
+    {
+        image1:"/ASSETS/image2.jpeg",
+        title1:'third card',       
+        name1:'Salu singh',
+        rating1:8.8
+    },
+    {
+        image1:"/ASSETS/image6.jpeg",
+        title1:'fourth card',       
+        name1:'shandya singh',
+        rating1:8.8
+    },
 ]
 
 data.forEach((element,i) => {
@@ -56,20 +77,53 @@ data.forEach((element,i) => {
         <span class="info">
             <h4 class="title">${data[i].title}</h4>
             <span>${data[i].rating}</span>
-        </span>
-            
-        
-        `
-
+            <h4>${data[i].name}</h4>
+        </span>       
+        `       
         card.innerHTML+=Educard;
         main.appendChild(card);
+});
+data2.forEach((element,i) => {
+    var main2=document.querySelector('.main2');
+    console.log(main2);
+    var card2=document.createElement('span');
+    card2.classList='card2';
+
+    const h1=`
+    <img src="${data2[i].image1}" alt="" width="150px" height="140px">
+        <span class="info">
+            <h4 class="title">${data2[i].title1}</h4>
+            <span>${data2[i].rating1}</span>
+    <h2>${data2[i].name1}</h2>
+    `
+    card2.innerHTML+= h1;
+    main2.appendChild(card2)
 
 });
 
 
         
 
+// function create(){
+//     const main=document.querySelector(".main");
+// var temp="";
+// const card=document.createElement("span");
+// card.classList='card';
+// for(var i=0;i<length;i++){
+//     temp+=`
+//     <img src="${data[i].image}" alt="" width="150px" height="140px">
+//         <span class="info">
+//             <h4 class="title">${data[i].title}</h4>
+//             <span>${data[i].rating}</span>
+//             <h4>${data[i].name}</h4>
+//         </span> 
+//     `
 
+// }
+
+// document.getElementById("data").innerHTML=temp;
+// }
+// create();
     </script>
 </body>
 </html>
